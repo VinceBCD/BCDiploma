@@ -115,7 +115,7 @@ contract BCDToken is VestedToken, WhitelistsRegistration {
         // Address is only in the silver whitelist: contribution is capped
         if (!goldWhiteList[msg.sender]) {
             // Check if address has already contributed for maximum allowance
-            if (contributors[msg.sender] == MAX_ETHER_FOR_SILVER_WHITELIST) {
+            if (contributors[msg.sender] >= MAX_ETHER_FOR_SILVER_WHITELIST) {
                 revert();
             }
             // limit the total contribution to MAX_ETHER_FOR_SILVER_WHITELIST
