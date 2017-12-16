@@ -9,7 +9,7 @@ import './Ownable.sol';
  * - vesting for an address
  * - token tradability delay
  */
-contract VestedToken is Ownable {
+contract VestedToken {
     using SafeMath for uint256;
     
     // Vested wallet address
@@ -51,7 +51,6 @@ contract VestedToken is Ownable {
         if (_from == vestedAddress && (now < (asideTokensMintDate + VESTING_DELAY))) { revert(); }
 
         uint256 _allowance = allowed[_from][msg.sender];
-        require(_allowance <= _value);
         balances[_from] = balances[_from].sub(_value);
         balances[_to] = balances[_to].add(_value);
         allowed[_from][msg.sender] = _allowance.sub(_value);
@@ -62,8 +61,6 @@ contract VestedToken is Ownable {
 
     // approve ERC20 function
     function approve(address _spender, uint256 _value) public returns (bool success) {
-        require(_spender != 0x0);
-
         allowed[msg.sender][_spender] = _value;
         Approval(msg.sender, _spender, _value);
         
@@ -72,9 +69,6 @@ contract VestedToken is Ownable {
 
     // allowance ERC20 function
     function allowance(address _owner, address _spender) public constant returns (uint256 remaining) {
-        require(_owner != 0x0);
-        require(_spender != 0x0);
-
         return allowed[_owner][_spender];
     }
     

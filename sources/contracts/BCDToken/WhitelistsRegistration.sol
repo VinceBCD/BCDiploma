@@ -14,14 +14,24 @@ contract WhitelistsRegistration is Ownable {
     // List of whitelisted addresses for KYC over 10 ETH
     mapping(address => bool) goldWhiteList;
     
+    // Different stage from the ICO
+    enum WhiteListState {
+        // This address is not whitelisted
+        None,
+        // this address is on the silver whitelist
+        Silver,
+        // this address is on the gold whitelist
+        Gold
+    }
+
     event SilverWhitelist(address indexed _address, bool _isRegistered);
     event GoldWhitelist(address indexed _address, bool _isRegistered);    
     
     // Return registration status of an specified address
-    function checkRegistrationStatus(address _address) public constant returns (string) {
-        if (goldWhiteList[_address]) { return "gold"; }
-        if (silverWhiteList[_address]) { return "silver"; }
-        return "none";
+    function checkRegistrationStatus(address _address) public constant returns (WhiteListState) {
+        if (goldWhiteList[_address]) { return WhiteListState.Gold; }
+        if (silverWhiteList[_address]) { return WhiteListState.Silver; }
+        return WhiteListState.None;
     }
     
     // Change registration status for an address in the whitelist for KYC under 10 ETH

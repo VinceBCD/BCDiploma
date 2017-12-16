@@ -34,7 +34,7 @@ contract BCDToken is VestedToken, WhitelistsRegistration {
     address public communityAddress;
 
     // Different stage from the ICO
-    enum State{
+    enum State {
         // ICO isn't started yet, initial state
         Init,
         // Presale has started
@@ -61,7 +61,7 @@ contract BCDToken is VestedToken, WhitelistsRegistration {
     uint256 public tokensSold;
     
     // Amount of ETH raised during ICO
-    uint256 private etherRaisedDuringICO = 0;
+    uint256 private etherRaisedDuringICO;
     
     // Maximum total of BCDT Token sold during ITS
     uint private constant MAX_TOTAL_BCDT_TO_SELL = 100000000 * 1 ether;
@@ -90,9 +90,6 @@ contract BCDToken is VestedToken, WhitelistsRegistration {
 
     // Constructor
     function BCDToken() public {
-        reserveAddress = 0x0;
-        communityAddress = 0x0;
-        vestedAddress = 0x0;
     }
 
     function() public payable {
@@ -154,8 +151,6 @@ contract BCDToken is VestedToken, WhitelistsRegistration {
         }
         // Log token transfer operation
         Transfer(0x0, msg.sender, tokenToSend); 
-        
-        return;
     }
 
     // Allow contributors to withdraw after the end of the ICO if the softcap hasn't been reached
@@ -199,14 +194,17 @@ contract BCDToken is VestedToken, WhitelistsRegistration {
         totalSupply = tokensSold.mul(15).div(10);
 
         // 20% of total supply is allocated to reserve
-        setAllocation(reserveAddress, RESERVE_ALLOCATION_PER_MILLE_RATIO);
+        uint256 _amountMinted = setAllocation(reserveAddress, RESERVE_ALLOCATION_PER_MILLE_RATIO);
 
         // 10.3% of total supply is allocated to community
-        setAllocation(communityAddress, COMMUNITY_ALLOCATION_PER_MILLE_RATIO);
+        _amountMinted = _amountMinted.add(setAllocation(communityAddress, COMMUNITY_ALLOCATION_PER_MILLE_RATIO));
 
         // 3% of total supply is allocated to founders
-        setAllocation(vestedAddress, FOUNDERS_ALLOCATION_PER_MILLE_RATIO);
+        _amountMinted = _amountMinted.add(setAllocation(vestedAddress, FOUNDERS_ALLOCATION_PER_MILLE_RATIO));
         
+        // the allocation is only 33.3%*150/100 = 49.95% of the token solds. It is therefore slightly higher than it should.
+        // to avoid that, we correct the real total number of tokens
+        totalSupply = tokensSold.add(_amountMinted);
         // Send the eth to the owner of the contract
         owner.transfer(this.balance);
     }
@@ -222,8 +220,7 @@ contract BCDToken is VestedToken, WhitelistsRegistration {
         vestedAddress = _founderAddress;
     }
     
-    function updateCapsAndRate(uint _presaleCapInETH, uint _round1CapInETH, uint _softCapInETH, uint _rateETH_BCDT) 
-        public onlyOwner onlyInState(State.Init) {
+    function updateCapsAndRate(uint _presaleCapInETH, uint _round1CapInETH, uint _softCapInETH, uint _rateETH_BCDT) public onlyOwner onlyInState(State.Init) {
             
         // Caps and rate are updatable until ICO starts
         require(_round1CapInETH > _presaleCapInETH);
@@ -298,11 +295,12 @@ contract BCDToken is VestedToken, WhitelistsRegistration {
         }        
     }   
 
-    function setAllocation(address _to, uint _ratio) private onlyOwner{
+    function setAllocation(address _to, uint _ratio) private onlyOwner returns (uint256) {
         // Aside token is a percentage of totalSupply
         uint256 tokenAmountToTransfert = totalSupply.mul(_ratio).div(1000);
         balances[_to] = balances[_to].add(tokenAmountToTransfert);
         AsideTokensHaveBeenAllocated(_to, tokenAmountToTransfert);
-        Transfer(0x0, _to, tokenAmountToTransfert);            
+        Transfer(0x0, _to, tokenAmountToTransfert);
+        return tokenAmountToTransfert;
     }
 }
