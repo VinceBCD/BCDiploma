@@ -75,9 +75,15 @@ contract BCDToken is VestedToken, WhitelistsRegistration {
     mapping(address => uint256) contributors;
 
     // Use to allow function call only if currentState is the one specified
-    modifier onlyInState(State _state)
+    modifier inStateInit()
     {
-        require(_state == currentState); 
+        require(currentState == State.Init); 
+        _; 
+    }
+	
+    modifier inStateRound2Finished()
+    {
+        require(currentState == State.Round2Finished); 
         _; 
     }
     
@@ -154,7 +160,7 @@ contract BCDToken is VestedToken, WhitelistsRegistration {
     }
 
     // Allow contributors to withdraw after the end of the ICO if the softcap hasn't been reached
-    function withdraw() public onlyInState(State.Round2Finished) {
+    function withdraw() public inStateRound2Finished {
         // Only contributors with positive ETH balance could Withdraw
         if(contributors[msg.sender] == 0) { revert(); }
         
@@ -175,7 +181,7 @@ contract BCDToken is VestedToken, WhitelistsRegistration {
     }
 
     // At the end of the sale, mint the aside tokens for the reserve, community and founders
-    function mintAsideTokens() public onlyOwner onlyInState(State.Round2Finished) {
+    function mintAsideTokens() public onlyOwner inStateRound2Finished {
 
         // Reserve, community and founders address have to be set before mint aside tokens
         require((reserveAddress != 0x0) && (communityAddress != 0x0) && (vestedAddress != 0x0));
@@ -220,7 +226,7 @@ contract BCDToken is VestedToken, WhitelistsRegistration {
         vestedAddress = _founderAddress;
     }
     
-    function updateCapsAndRate(uint _presaleCapInETH, uint _round1CapInETH, uint _softCapInETH, uint _rateETH_BCDT) public onlyOwner onlyInState(State.Init) {
+    function updateCapsAndRate(uint _presaleCapInETH, uint _round1CapInETH, uint _softCapInETH, uint _rateETH_BCDT) public onlyOwner inStateInit {
             
         // Caps and rate are updatable until ICO starts
         require(_round1CapInETH > _presaleCapInETH);
