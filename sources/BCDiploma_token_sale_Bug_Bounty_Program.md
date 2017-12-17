@@ -3,19 +3,20 @@
 Thank you for visiting the BCDiploma Bug Bounty.
 
 BCDiploma aims to become the global standard of degree certification. 
-Please find our documentation:
-* Whitepaper: https://www.bcdiploma.com/img/BCD-WhitePaper_last.pdf
-* One Pager: https://www.bcdiploma.com/img/BCD_OnePager_last.pdf
+Take a look at our One Pager: https://www.bcdiploma.com/img/BCD_OnePager_last.pdf
+
+Also discover our Whitepaper: https://www.bcdiploma.com/img/BCD-WhitePaper_last.pdf
 
 You can also join our community:
 * on Telegram: https://t.me/BCDiploma
 * on https://www.bcdiploma.com
 
-
 If you've already read this information and have found a bug you'd like to submit to BCD for review, please use this form: https://www.bcdiploma.com/bug_bounty.html
+
+
 ## Rewards
 
-Paid out **Rewards** in ether are guided by the **Severity** category of the submission according to [OWASP](https://github.com/weifund/weifund-contracts/blob/master/BUG-BOUNTY-DETAILS.md)’s risk model, up to a maximum of $5,000 (in ETH) for program.
+Paid out **Rewards** in ether are guided by the **Severity** category of the submission according to [OWASP](https://github.com/weifund/weifund-contracts/blob/master/BUG-BOUNTY-DETAILS.md)’s risk model, up to a maximum of $5,000 in ETH for program.
 
 ## Rules
 
@@ -49,3 +50,11 @@ Paid out **Rewards** in ether are guided by the **Severity** category of the sub
 **Examples of what's out of scope**
 
 * An address that has already contributed can be removed from the whitelist
+
+## Reporting ?
+
+Please use this form: https://www.bcdiploma.com/bug_bounty.html to report bug.
+
+## Any questions ?
+
+Join us on Telegram https://t.me/BCDiploma
