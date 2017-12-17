@@ -16,7 +16,7 @@ If you've already read this information and have found a bug you'd like to submi
 
 ## Rewards
 
-Paid out **Rewards** in ether are guided by the **Severity** category of the submission according to [OWASP](https://github.com/weifund/weifund-contracts/blob/master/BUG-BOUNTY-DETAILS.md)’s risk model, up to a maximum of $5,000 for campaign.
+Paid out **Rewards** in ether are guided by the **Severity** category of the submission according to [OWASP](https://github.com/weifund/weifund-contracts/blob/master/BUG-BOUNTY-DETAILS.md)’s risk model, up to a maximum of $5,000 (in ETH) for campaign.
 
 ## Rules
 
