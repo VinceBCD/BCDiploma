@@ -12,11 +12,10 @@ You can also join our community:
 * on https://www.bcdiploma.com
 
 
-If you've already read this information and have found a bug you'd like to submit to BCD for review, please use this form: [Submit a Bug](https://goo.gl/forms/R0w3vaKdjv3s7SqY2).
-
+If you've already read this information and have found a bug you'd like to submit to BCD for review, please use this form: https://www.bcdiploma.com/bug_bounty.html
 ## Rewards
 
-Paid out **Rewards** in ether are guided by the **Severity** category of the submission according to [OWASP](https://github.com/weifund/weifund-contracts/blob/master/BUG-BOUNTY-DETAILS.md)’s risk model, up to a maximum of $5,000 (in ETH) for campaign.
+Paid out **Rewards** in ether are guided by the **Severity** category of the submission according to [OWASP](https://github.com/weifund/weifund-contracts/blob/master/BUG-BOUNTY-DETAILS.md)’s risk model, up to a maximum of $5,000 (in ETH) for program.
 
 ## Rules
 
@@ -37,7 +36,7 @@ Paid out **Rewards** in ether are guided by the **Severity** category of the sub
 * Bugs causing a transaction to be sent that was different from what user confirmed: for example, user transfers 10 ether in the UI, but exactly 10 wasn't transferred.
 * Bugs that could lead to the direct loss of funds such as paying out to non-intended payout beneficiaries
 * Bugs that lead to tokens being claimed before they should be
-* Bugs that lead to the wrong amount of funds being refunded when a campaign is not successful
+* Bugs that lead to the wrong amount of funds being refunded if the crowdsale is not successful
 * Different behavior than expected in specifications: https://github.com/VinceBCD/BCDiploma/blob/master/sources/contracts/BCDToken/README.md
 
 
