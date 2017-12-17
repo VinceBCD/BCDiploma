@@ -178,7 +178,7 @@ contract BCDToken is VestedToken, WhitelistsRegistration {
     function mintAsideTokens() public onlyOwner onlyInState(State.Round2Finished) {
 
         // Reserve, community and founders address have to be set before mint aside tokens
-        require((reserveAddress != 0x0) && (communityAddress != 0x0) && (reserveAddress != 0x0));
+        require((reserveAddress != 0x0) && (communityAddress != 0x0) && (vestedAddress != 0x0));
 
         // Aside tokens can be minted only if softcap is reached
         require(this.balance >= softCap);
