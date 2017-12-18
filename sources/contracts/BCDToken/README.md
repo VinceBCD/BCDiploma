@@ -85,7 +85,7 @@ Are admitted:
 
 SafeMath.sol and Ownable.sol are based on the open source openzeppelin framework.
 
-WhitelistsRegistration.sol, developed by BCD, inherits Ownable and allows management of the double whitelist
+WhitelistsRegistration.sol, developed by BCD, inherits Ownable and allows management of the double whitelist by the owner and by another address
 
 VestedToken. sol, developed by BCD implements the ERC-20 interface methods by introducing a token tradablity and vesting delay on an address (in this case, founders one)
 
