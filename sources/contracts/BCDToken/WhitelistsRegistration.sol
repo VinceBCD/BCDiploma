@@ -73,11 +73,11 @@ contract WhitelistsRegistration is Ownable {
     
     /**
     * @dev Allows the current owner or whiteLister to transfer control of the whitelist to a newWhitelister.
-    * @param newWhitelister The address to transfer whitelist to.
+    * @param _newWhiteLister The address to transfer whitelist to.
     */
-    function setWhitelister(address newWhiteLister) public onlyOwnerOrWhiteLister {
-      require(newWhiteLister != address(0));
-      SetWhitelister(newWhiteLister);
-      whiteLister = newWhiteLister;
+    function setWhitelister(address _newWhiteLister) public onlyOwnerOrWhiteLister {
+      require(_newWhiteLister != address(0));
+      SetWhitelister(_newWhiteLister);
+      whiteLister = _newWhiteLister;
     }
 }
