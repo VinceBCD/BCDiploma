@@ -1,4 +1,4 @@
-pragma solidity ^0.4.18;
+pragma solidity ^0.4.19;
 
 import './SafeMath.sol';
 import './WhitelistsRegistration.sol';
@@ -18,16 +18,16 @@ contract BCDToken is VestedToken, WhitelistsRegistration {
     uint private constant MAX_ETHER_FOR_SILVER_WHITELIST = 10 ether;
     
     // ETH/BCDT rate
-    uint public rateETH_BCDT = 8000;
+    uint public rateETH_BCDT = 13000;
 
     // Soft cap, if not reached contributors can withdraw their ethers
-    uint public softCap = 3200 ether;
+    uint public softCap = 1800 ether;
 
     // Cap in ether of presale
-    uint public presaleCap = 3200 ether;
+    uint public presaleCap = 1800 ether;
     
-    // Cap in ether of Round 1 (presale cap + 3200 ETH)
-    uint public round1Cap = 6400 ether;    
+    // Cap in ether of Round 1 (presale cap + 1800 ETH)
+    uint public round1Cap = 3600 ether;    
     
     // BCD Reserve/Community Wallets
     address public reserveAddress;
