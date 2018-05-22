@@ -1,5 +1,4 @@
-[TOCM]
-#BCDiploma @42 BlockDays#1
+# BCDiploma @42 BlockDays#1
 
 ## Présentation
 
@@ -15,7 +14,7 @@ Soutenu par la communauté Ethereum lors de son ICO en janvier 2018 ($1.9M), BCD
 
 BCDiploma a intégré **Station F** (Chain Accelerator) et compte aujourd’hui 8 personnes.
 
-##Sprint
+## Sprint
 
 ***EvidenZ*** permet de sécuriser, d’authentifier et de partager les données d’un diplôme (d’une attestation, etc…) sur Ethereum. Le framework permet également de partager cette information “mise en forme” via un lien URL. C’est la première fois qu’un simple clic permet d’accéder, sur le web, à un diplôme “responsive” dont les données significatives sont directement stockées sur une transaction ethereum.
 
@@ -23,7 +22,7 @@ Votre diplôme, ou votre attestation de compétences ou de parcours, c’est imp
 
 **Le challenge que propose BCDiploma lors du BlockDays#1 à 42 est d’imaginer et de réaliser le portfolio que vous souhaiteriez joindre à votre diplôme ou attestation, de façon authentifiée, décentralisée, sécurisée et en maîtrisant l’accès. Smart contract, Uport, IPFS, gestion d’identité et droits d’accès … tout reste à inventer, à vous de jouer !**
 
-##Programme
+## Programme
 
 Par équipe de quatre maximum, vous relèverez le challenge proposé et présenterez votre portfolio décentralisé à l’issue du **BlockDays#1**.
 
@@ -35,18 +34,14 @@ Par équipe de quatre maximum, vous relèverez le challenge proposé et présent
 
 Choix des environnements et des outils, et c’est parti!
 
-##Compétences et prérequis
+## Compétences et prérequis
 
-###Prérequis:
+### Prérequis:
 Intérêt pour la blockchain
 
-###Compétences :
+### Compétences :
 - Ethereum
 - Java
 - Solidity
 - Web3j / Web3js
 - Notions IPFS / Uport
-
-
-
-
