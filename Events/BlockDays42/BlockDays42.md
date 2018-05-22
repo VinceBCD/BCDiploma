@@ -16,7 +16,7 @@ BCDiploma a intégré **Station F** (Chain Accelerator) et compte aujourd’hui 
 
 ## Sprint
 
-***EvidenZ*** permet de sécuriser, d’authentifier et de partager les données d’un diplôme (d’une attestation, etc…) sur Ethereum. Le framework permet également de partager cette information “mise en forme” via un lien URL. C’est la première fois qu’un simple clic permet d’accéder, sur le web, à un diplôme en mode rezponsive design dont les données significatives sont directement stockées sur une transaction ethereum.
+***EvidenZ*** permet de sécuriser, d’authentifier et de partager les données d’un diplôme (d’une attestation, etc…) sur Ethereum. Le framework permet également de partager cette information “mise en forme” via un lien URL. C’est la première fois qu’un simple clic permet d’accéder, sur le web, à un diplôme en mode responsive design dont les données significatives sont directement stockées sur une transaction ethereum.
 
 Votre diplôme, ou votre attestation de compétences ou de parcours, c’est important ! Mais vous souhaiterez peut être y “ajouter” des informations complémentaires, un compte rendu de stage, le code de votre dernière application, un lien vers une page personnelle, etc ...
 
