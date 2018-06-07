@@ -28,7 +28,7 @@ Par équipe de quatre maximum, vous relèverez le challenge proposé et présent
 
 1. Présentation du projet et du framework EvidenZ mis à disposition.
 
-2. ***Sprint 42 / BCDiploma Part 1***. Création d’un accès gestionnaire dans EvidenZ, publication sur RinkedBY ETH de vos Attestations de participation au sprint 42 / BCDiploma du  ***BlockDays#1*** dans un format crypté … pour une consultation sur le web “mises en forme” présentable à tous à la fin de la première journée !
+2. ***Sprint 42 / BCDiploma Part 1***. Création d’un accès gestionnaire dans EvidenZ, publication sur Rinkeby ETH de vos Attestations de participation au sprint 42 / BCDiploma du  ***BlockDays#1*** dans un format crypté … pour une consultation sur le web “mises en forme” présentable à tous à la fin de la première journée !
 
 3. ***Sprint 42 / BCDiploma Part 2***. Analyse des fonctionnalités attendues d’un portfolio décentralisé associé à l’attestation certifiée : par exemple joindre de façon certifiée le github de votre équipe, un document, un lien vers une source, une donnée …
 
