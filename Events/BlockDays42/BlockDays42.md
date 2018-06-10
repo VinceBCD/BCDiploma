@@ -41,7 +41,12 @@ Intérêt pour la blockchain
 
 ### Compétences :
 - Ethereum
-- Java
 - Solidity
 - Web3j / Web3js
 - Notions IPFS / Uport
+
+## Pour démarrer le challenge: Connexion au groupe telegram prévu à cet effet
+
+Le déroulé du challenge est épinglé dans un groupe telegram dont le nom est l’adresse ethereum du owner du contrat à l’adresse  0x6C29a6d4F9BFa728BB7769bD8B8EBcAAc....... de la blockchain Ethereum Rinkeby. (l'adresse complète sera donnée au lancement du challenge) 
+
+Allez chercher le nom de ce groupe et joignez-le en utilisant telegram.
