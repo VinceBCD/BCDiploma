@@ -31,7 +31,7 @@ BCDiploma stands out from all other blockchain players thanks to an innovative t
 To ensure the durability of the solution for users, the EvidenZ framwork is Opensource. Combined with the transparency of a public blockchain, EvidenZ's opensource smart contracts and DApps allow BCDiploma customers to deploy the solution by themselves.
 
 In order to protect EvidenZ's technological innovation, 2 initiatives are currently underway:
-* A File a utility patent for the solution in USA has been deposited (September 2018);
+* A utility patent for the solution in USA has been deposited (September 2018);
 * Most of the sources are stored in a private Gitlab  repository, and accessible only on request by BCDiploma customers.
 
 Nevertheless, these sources may be transmitted under NDA to external auditors, at the sole discretion of Blockchain Certified Data SAS.
