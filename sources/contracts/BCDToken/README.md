@@ -27,7 +27,7 @@ If the cap is reached for each of these rounds, the round is automatically compl
 * 20% of the total tokens allocated to the BCD reserve.
 * 10.3% of the total minted tokens allocated to the BCD support community (e. g.: advisors, non-founder's team, bounty program)
 * 3% of the total minted tokens allocated to the founders, blocked for 1 year.
-* 
+
 No BCDT token will ever be created again.
 
 The tokens will be movable 12 days after the creation of the additional tokens above.
