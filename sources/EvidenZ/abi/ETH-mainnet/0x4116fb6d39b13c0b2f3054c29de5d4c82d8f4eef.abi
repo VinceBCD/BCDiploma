@@ -1,0 +1,1765 @@
+[
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_issuer",
+				"type": "address"
+			}
+		],
+		"name": "getIssuerName",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_validatorID",
+				"type": "uint256"
+			},
+			{
+				"name": "_newURL",
+				"type": "string"
+			}
+		],
+		"name": "updateValidatorURL",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_newAddressOracle",
+				"type": "address"
+			}
+		],
+		"name": "updateBCDTETHRateOracleAddress",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "templateId",
+				"type": "string"
+			}
+		],
+		"name": "testTemplateExistenceForSender",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getBCDAddress",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_validatorAddress",
+				"type": "address"
+			},
+			{
+				"name": "_validatorName",
+				"type": "string"
+			},
+			{
+				"name": "_validatorUrl",
+				"type": "string"
+			},
+			{
+				"name": "_legalReference",
+				"type": "string"
+			},
+			{
+				"name": "_KYB_hash",
+				"type": "string"
+			},
+			{
+				"name": "_logoURL",
+				"type": "string"
+			}
+		],
+		"name": "addValidator",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_issuerAddress",
+				"type": "address"
+			},
+			{
+				"name": "_templateId",
+				"type": "string"
+			}
+		],
+		"name": "checkTemplateExistence",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "validators",
+		"outputs": [
+			{
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"name": "url",
+				"type": "string"
+			},
+			{
+				"name": "legalReference",
+				"type": "string"
+			},
+			{
+				"name": "KYB_hash",
+				"type": "string"
+			},
+			{
+				"name": "logoURL",
+				"type": "string"
+			},
+			{
+				"name": "validatorID",
+				"type": "uint256"
+			},
+			{
+				"name": "lastBlockValidity",
+				"type": "uint256"
+			},
+			{
+				"name": "exists",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getBurnAddress",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_templateId",
+				"type": "string"
+			},
+			{
+				"name": "_label",
+				"type": "string"
+			},
+			{
+				"name": "_template",
+				"type": "string"
+			}
+		],
+		"name": "addTemplate",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_issuerID",
+				"type": "uint256"
+			},
+			{
+				"name": "_newIntentDeclaration",
+				"type": "string"
+			}
+		],
+		"name": "updateIssuerintentDeclaration",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_issuerAddress",
+				"type": "address"
+			},
+			{
+				"name": "_issuerName",
+				"type": "string"
+			},
+			{
+				"name": "_legalReference",
+				"type": "string"
+			},
+			{
+				"name": "_intentDeclaration",
+				"type": "string"
+			},
+			{
+				"name": "_host",
+				"type": "string"
+			},
+			{
+				"name": "_KYB_hash",
+				"type": "string"
+			}
+		],
+		"name": "addIssuer",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_issuerAddress",
+				"type": "address"
+			},
+			{
+				"name": "_templateId",
+				"type": "string"
+			}
+		],
+		"name": "getTemplateUniqueID",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getBurnRate",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getCreditiDataSize",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getTributeAddress",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_issuerAddress",
+				"type": "address"
+			},
+			{
+				"name": "_templateId",
+				"type": "string"
+			}
+		],
+		"name": "getAllIssuerInfosAsJSON",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "issuersaddress",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_templateId",
+				"type": "string"
+			},
+			{
+				"name": "_label",
+				"type": "string"
+			}
+		],
+		"name": "updateTemplateLabel",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_issuer",
+				"type": "address"
+			}
+		],
+		"name": "getIssuerKYB_hash",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "issuers",
+		"outputs": [
+			{
+				"name": "validatorID",
+				"type": "uint256"
+			},
+			{
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"name": "legalReference",
+				"type": "string"
+			},
+			{
+				"name": "intentDeclaration",
+				"type": "string"
+			},
+			{
+				"name": "host",
+				"type": "string"
+			},
+			{
+				"name": "KYB_hash",
+				"type": "string"
+			},
+			{
+				"name": "issuerID",
+				"type": "uint256"
+			},
+			{
+				"name": "lastBlockValidity",
+				"type": "uint256"
+			},
+			{
+				"name": "nbBytesToCertified",
+				"type": "uint256"
+			},
+			{
+				"name": "exists",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_issuer",
+				"type": "address"
+			}
+		],
+		"name": "getIssuerLegalReference",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_newTributeAddress",
+				"type": "address"
+			}
+		],
+		"name": "updateTributeAddress",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_newBCDAddress",
+				"type": "address"
+			}
+		],
+		"name": "updateBCDAddress",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getTributeRate",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_newBurnRate",
+				"type": "uint256"
+			},
+			{
+				"name": "_newBCDRate",
+				"type": "uint256"
+			},
+			{
+				"name": "_newTributeRate",
+				"type": "uint256"
+			}
+		],
+		"name": "updateAllocations",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_issuerID",
+				"type": "uint256"
+			}
+		],
+		"name": "cancelIssuerNow",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "validatoraddress",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_nbBytesToCertified",
+				"type": "uint256"
+			}
+		],
+		"name": "getNeededTokensForBytesToCertified",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_templateid",
+				"type": "string"
+			},
+			{
+				"name": "_data",
+				"type": "bytes"
+			}
+		],
+		"name": "publishData",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_issuerID",
+				"type": "uint256"
+			},
+			{
+				"name": "_newLegalReference",
+				"type": "string"
+			}
+		],
+		"name": "updateIssuerLegalReference",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_issuerID",
+				"type": "uint256"
+			},
+			{
+				"name": "_newHost",
+				"type": "string"
+			}
+		],
+		"name": "updateIssuerHost",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_issuerAddress",
+				"type": "address"
+			},
+			{
+				"name": "_templateId",
+				"type": "string"
+			}
+		],
+		"name": "getTemplateLabel",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_issuerID",
+				"type": "uint256"
+			},
+			{
+				"name": "_newIssuerName",
+				"type": "string"
+			}
+		],
+		"name": "updateIssuerName",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_addressOfTokenHolder",
+				"type": "address"
+			}
+		],
+		"name": "balanceOfBCDT",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_issuer",
+				"type": "address"
+			}
+		],
+		"name": "getIssuerIntentDeclaration",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "toggleConctractActive",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_creditDataSize",
+				"type": "uint256"
+			}
+		],
+		"name": "updateCreditDataSize",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_validatorID",
+				"type": "uint256"
+			},
+			{
+				"name": "_newKYB_hash",
+				"type": "string"
+			}
+		],
+		"name": "updateValidatorKYB_hash",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_issuerIDToBuyBytes",
+				"type": "uint256"
+			},
+			{
+				"name": "_nbBytesToCertified",
+				"type": "uint256"
+			}
+		],
+		"name": "buyBytesToCertifiedForIssuer",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_validatorID",
+				"type": "uint256"
+			}
+		],
+		"name": "cancelValidatorNow",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_validatorID",
+				"type": "uint256"
+			},
+			{
+				"name": "_newlogoURL",
+				"type": "string"
+			}
+		],
+		"name": "updateValidatorlogoURL",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_validatorID",
+				"type": "uint256"
+			},
+			{
+				"name": "_newLegalReference",
+				"type": "string"
+			}
+		],
+		"name": "updateValidatorLegalReference",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getOracleAddress",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_issuer",
+				"type": "address"
+			}
+		],
+		"name": "getIssuerLastBlockValidity",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_issuerAddress",
+				"type": "address"
+			}
+		],
+		"name": "checkIssuerExistence",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_validatorID",
+				"type": "uint256"
+			},
+			{
+				"name": "_newName",
+				"type": "string"
+			}
+		],
+		"name": "updateValidatorName",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getExchangeRates",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_issuer",
+				"type": "address"
+			}
+		],
+		"name": "getIssuerHost",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_newRateETHEUR",
+				"type": "uint256"
+			}
+		],
+		"name": "updateRateETHEUR",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "issuernbBytesToCertifiedBalance",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_issuerAddress",
+				"type": "address"
+			}
+		],
+		"name": "getTemplateList",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_templateId",
+				"type": "string"
+			},
+			{
+				"name": "_template",
+				"type": "string"
+			}
+		],
+		"name": "updateTemplate",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_validatorID",
+				"type": "uint256"
+			},
+			{
+				"name": "_blockNumber",
+				"type": "uint256"
+			}
+		],
+		"name": "cancelValidator",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_issuerID",
+				"type": "uint256"
+			},
+			{
+				"name": "_newKYB_hash",
+				"type": "string"
+			}
+		],
+		"name": "updateIssuerKYB_hash",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getIssuersCounter",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_newRateBCDTETH",
+				"type": "uint256"
+			}
+		],
+		"name": "updateRateBCDTETH",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_issuerAddress",
+				"type": "address"
+			},
+			{
+				"name": "_templateId",
+				"type": "string"
+			}
+		],
+		"name": "getTemplate",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getBCDRate",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_creditPriceInEuro",
+				"type": "uint256"
+			}
+		],
+		"name": "updateCreditPriceInEuro",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getValidatorsCounter",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_issuerID",
+				"type": "uint256"
+			},
+			{
+				"name": "_blockNumber",
+				"type": "uint256"
+			}
+		],
+		"name": "cancelIssuer",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getCreditPriceInEuro",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "AddValidator",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "AddIssuer",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "UpdateIssuerName",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "UpdateIssuerintentDeclaration",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "UpdateIssuerLegalReference",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "UpdateIssuerHost",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "UpdateIssuerKYB_hash",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "UpdateValidatorName",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "UpdateValidatorURL",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "UpdateValidatorLegalReference",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "UpdateValidatorKYB_hash",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "UpdateValidatorlogoURL",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "CancelValidator",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "CancelIssuer",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "AddTemplate",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "UpdateTemplateLabel",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			}
+		],
+		"name": "UpdateTemplate",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "UpdateAllocations",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "UpdateCreditDataSize",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "UpdateCreditPriceInEuro",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "UpdateBCDAddress",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "UpdateTributeAddress",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "UpdateBCDTETHRateOracleAddress",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "UpdateRateETHEUR",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "UpdateRateBCDTETH",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "BuyBytesToCertifiedForIssuer",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "Burn",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "TransferToBCD",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "TransferToTribute",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "PublishData",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"name": "ToggleConctractActive",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "previousOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "OwnershipTransferred",
+		"type": "event"
+	}
+]
