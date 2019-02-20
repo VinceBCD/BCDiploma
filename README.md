@@ -1,5 +1,9 @@
 # BCDiploma feat. EvidenZ framework repository
 
+## Repository has moved to gitlab!
+
+Please visit https://gitlab.com/BCDiploma/EvidenZ-Public
+
 ## Abstract
 
 BCDiploma develops a solution for blockchain-based certification of certificates, thanks to its original framework, EvidenZ, to create the new world certification standard.
