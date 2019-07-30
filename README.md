@@ -2,7 +2,7 @@
 
 ## Repository has moved to gitlab!
 
-Please visit https://gitlab.com/BCDiploma/EvidenZ-Public
+This repository will be no more updated. Please visit https://gitlab.com/BCDiploma/EvidenZ-Public
 
 ## Abstract
 
@@ -11,8 +11,6 @@ BCDiploma develops a solution for blockchain-based certification of certificates
 EvidenZ provides an innovative technical approach: certify the significant data instead of the document itself. This major innovation allows a large number of application fields.
  
 As the first instance of use, BCDiploma develops a turnkey application for higher education institutions, and provides the graduate with a unique URL link: over his entire life, he will be able to prove the authenticity of his diploma in a single click.
-
-Please find a sample multilingual certificate here: https://certificate.bcdiploma.com/check/701BDD33DB32AA94E487E2B78AE95374854BE5DC22BAD788A219AECA79036ED1RDQ5YWhhOU9vSTExRStWT1FWaFB0RGpDOXExeGdYcjhNS0xwRWN1M2xGK0plbG1Z
 
 ## EvidenZ
 
